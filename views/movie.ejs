@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title> 
+            NA
+        </title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- General CSS -->
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+
+        <%- include('./partials/header') -%>
+        
+        <div class="book-info">
+
+            <div class="video-container">
+                <p></p>
+                <div class="video embed-responsive embed-responsive-4by3">
+              
+                <video width="720" height="480" controls class="embed-responsive-item">
+                        <source src="" type="video/webm">
+                        <!-- <source src="movie.ogg" type="video/ogg"> -->
+                        <!-- Your browser does not support the video tag. -->
+                </video>
+                </div>
+            </div>
+            <br>
+            
+            <div class="container">
+                
+                <div class="grid-child">
+                    <div class="row info">
+                        <div class="col-xs-6">
+                            <img src="/img/notl.jpeg" class = "cover-image-movie"/>
+                        </div>
+                        <div class="col-xs-6">  
+                        <span>
+                            <p>Title: NOTL
+                                <br>Released: Date
+                                <br>Director: Name here
+                                <br>Runtime: 1:14:29</p>   
+                        </span> 
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <%- include('./partials/footer') -%>
+    
+    </body>
+</html>
