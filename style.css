@@ -4,14 +4,13 @@
     /* background-color: rgb(131, 126, 167); */
     color:white;
     font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
-    background-color: rgb(21, 33, 75);
   }
   
   /* Body and Headers */
   body{
     position: relative;
     min-height: 100vh;
-    
+    background-color: rgb(21, 33, 75);
     padding-bottom: 2.5rem;
     display:grid;
   }
@@ -20,13 +19,17 @@
     padding-top: 50px;
   }
   
-  h3, h4{
+  .heading{
     padding-left: 25px;
+
   }
   
-  .center-heading{
-    text-align: center;
+
+
+  .sub-heading{
+    text-align: left;
     padding-bottom: 15px;
+    /* font-size: 100%; */
   }
   
   /* About  */
@@ -118,65 +121,7 @@
     margin: auto;
     padding: 0px;
   }
-  
-  
-  /* Video (Watch) */
-  
-  
-  .title-header{
-    text-align: center;
-    padding-bottom: 25px;
-    padding-top: 25px;
-  }
-  
-  .video{
-    height: auto;
-    width: 50%;
-    padding-top: 25px;
-    margin: 0 auto;
-    display: block;
-    text-align:center;
-  }
-  
-  .video-container{
-    padding-top:25px;
-    text-align: center;
-    font-size:25px;
-  }
-  
-  
-  .container{
-    display:grid; 
-    padding-bottom: 50px;
     
-  }
-  
-  .info {
-    /* float:right; */
-    align-self: center;
-    text-align: left;
-    /* font-size: 1.6vw; */
-    font-size: calc(50% + 1vw + 1vh);
-    padding-top: 50px;
-    padding-left: 90px;
-    /* font */
-    margin-left: auto;
-    margin-right: auto;
-    width: 27em
-  }  
-  
-  .cover-image-movie{
-    padding-right: 50px;
-    padding-left: 50px;
-    max-width: 85%;
-    height:auto;
-    /* width: auto; */
-    padding-top: 10px;
-    text-align: center;
-    padding-bottom: 10px;
-    
-  }
-  
   /* Footer */
   #footer{
     position: absolute;
