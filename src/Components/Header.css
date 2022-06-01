@@ -1,0 +1,29 @@
+.navbar{
+    background-color: rgb(99, 5, 5);
+    overflow-y: scroll;
+    padding-bottom: 6px;
+}
+
+.sub-item{
+    background-color: rgb(99, 5, 5);
+    color:white;
+}
+
+.sub-item:hover{
+    background-color: black; 
+    color:white;
+
+}
+
+.dropdown-menu{
+    background-color: rgb(99, 5, 5);
+}
+
+#top-item{
+    color: white;
+}
+
+.d-flex{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

@@ -1,0 +1,32 @@
+.test {
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+a:active{
+    color: white;
+}
+
+a:visited{
+    color: white;
+}
+
+.privacy, .about{
+    padding-top: 150px;
+    padding-left: 4em;
+    align-items: center;
+    justify-content: center;
+}
+
+.disclaimer{
+    position: absolute;
+    left: 0.5;
+    bottom: 0.5;
+    right: 0.5;
+}
