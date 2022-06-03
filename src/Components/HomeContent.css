@@ -3,36 +3,18 @@ body{
     min-height: 100vh;
     padding-bottom: 2.5rem;
     display:grid;
-  }
-  
-
-  .body-content{
-    padding-top: 50px;
-  }
-  
-  .heading{
-    padding-left: 25px;
-    padding-top: 25px;
-  }
-  
-
-
-  .sub-heading{
-    text-align: left;
-    padding-bottom: 15px;
-    /* font-size: 100%; */
-  }
+}   
 
 .horizontal{
 display: inline-block;
 padding-right: 25px;
-padding-bottom: 25px;
+/* padding-bottom: 25px; */
 text-align: center;
 }
 
 .horizontal img{
-max-width: 250px;
- max-height: 200px;
+/* max-width: 250px; */
+ max-height: 260px;
 padding-bottom: 5px;   
 }
 
