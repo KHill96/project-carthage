@@ -4,61 +4,85 @@ import './HomeContent.css'
 
 export default function HomeContent (props){
 
-    const listItems = [];
+    const listItemsRecentlyAdded = [];
+    const listItemsMostPopular = [];
 
+    // Generate listItems
+    var idString = "";
     for (let i = 0; i < 9; i++){
         if (props.items==="books"){
-            listItems.push(
+            idString ='/books/' + i;
+                if (props.category==="recentlyAdded"){
+                listItemsRecentlyAdded.push(
+                <li className="horizontal">
+                    <a className="title" href={idString}>
+                        <img src={bookCoverTemp} alt="cover"/>
+                        <p>BookText</p>
+                    </a>
+                </li>)
+            }
+            else{
+                listItemsMostPopular.push(
+                    <li className="horizontal">
+                        <a className="title" href=".">
+                            <img src={bookCoverTemp} alt="cover"/>
+                            <p>BookText</p>
+                        </a>
+                    </li>)
+            }   
+        }
+        else{
+            if (props.category==="recentlyAdded"){
+                listItemsRecentlyAdded.push(
                 <li className="horizontal">
                     <a className="title" href=".">
                         <img src={bookCoverTemp} alt="cover"/>
-                        <p>Text</p>
+                        <p>MovieText</p>
                     </a>
-                </li>
+                </li>)
+            }
+            else{
+                listItemsMostPopular.push(
+                    <li className="horizontal">
+                        <a className="title" href=".">
+                            <img src={bookCoverTemp} alt="cover"/>
+                            <p>MovieText</p>
+                        </a>
+                    </li>)
+            }   
+        }
+    }
+
+   
+
+   
+        if (props.category==="recentlyAdded"){
+            return(
+                <div className="body-content">
+                    <span className="content">
+                    <div className="recentlyAdded">
+                        <ul className="display">
+                            {listItemsRecentlyAdded}
+                        </ul>
+                    </div>  
+                </span>
+            </div>  
             )
         }
-        else if (props.items === "movies"){
-            listItems.push(
-                <li className="horizontal">
-                    <a className="title" href=".">
-                        <img src={bookCoverTemp} alt="cover" />
-                        <p>Text</p>
-                    </a>
-                </li>
+        else{
+            return(
+                <div className="body-content">
+                    <span className="content">
+                        <div className="recentlyAdded">
+                            <ul className="display">
+                                {listItemsMostPopular}
+                            </ul>
+                        </div>  
+                    </span>
+                </div> 
             )
         }
-    }
+    
 
-
-    if (props.items==="books"){
-        return(
-            <div className="body-content">
-            <h1 className="heading">Books</h1>
-            <h3 className="sub-heading">&emsp;&emsp;&emsp;Recently Added</h3>
-            <span className="content">
-                <div className="recentlyAdded">
-                    <ul className="display">
-                        {listItems}
-                    </ul>
-                </div>  
-            </span>
-        </div>  
-        )
-    }
-
-    else{
-        return(
-            <div className="body-content">
-            <h1 className="heading">Movies</h1>
-            <h3 className="sub-heading">&emsp;&emsp;&emsp;Recently Added</h3>
-            <span className="content">
-                <div className="recentlyAdded">
-                    <ul className="display">
-                        {listItems}
-                    </ul>
-                </div>  
-            </span>
-        </div>  
-        )
-    }
+   
 }
