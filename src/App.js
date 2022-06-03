@@ -6,6 +6,7 @@ import About from './Pages/About';
 import Privacy from './Pages/Privacy';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Book from './Pages/Book';
 
 
 function App() {
@@ -17,12 +18,17 @@ function App() {
         <Routes>
           {/* Home Route / Index Route */}
           <Route path="/" exact element={<Home/>} />
-         {/* About */}
+          {/* Book */}
+          <Route path="/books/:id" exact element={<Book/>}/>
+          {/* About */}
           <Route path="/about" exact element={<About/>} />
           {/* Privacy Policy */}
           <Route path="/privacy" exact element={<Privacy/>} />
+
+        
         </Routes>
         {/* Footer */}
+        <div className='buffer'></div>
         <Footer />
     </div>
     </Router>
