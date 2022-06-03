@@ -14,14 +14,14 @@ export default function Header () {
     return (
         
         <div className="navbar">
-            <Navbar  fixed='top' expand="lg" variant="dark">
+            <Navbar fixed='top' expand="lg" variant="dark">
                 <Container fluid>
                 <Navbar.Brand className="brand"  href="/">
                     Public Repository
                 </Navbar.Brand>
                 <NavbarToggle />
                 <Navbar.Collapse>
-                    <Nav className='me-auto my-2 lg-0' style ={{maxHeight:'100px'}}>
+                    <Nav className='me-auto my-2 lg-0'>
                         <NavDropdown id="top-item" title="Books">
                             <NavDropdown.Item className="sub-item" href="#" >Bookshelves</NavDropdown.Item>
                             <NavDropdown.Item className="sub-item" href="#" >Upcoming</NavDropdown.Item>
@@ -35,9 +35,7 @@ export default function Header () {
                         <Nav.Link id="top-item" href="/about">
                             About
                         </Nav.Link>
-                        <Nav.Link id="top-item" href="/contact">
-                            Contact
-                        </Nav.Link>
+                        
                         
                     </Nav>
                     <Form className="d-flex">
@@ -47,7 +45,7 @@ export default function Header () {
                         className="me-2"
                         aria-label="Search"
                         />
-                        <Button variant="outline-light">Search</Button>
+                        <Button className="search-button">Search</Button>
                     </Form>
                     
                 </Navbar.Collapse>
