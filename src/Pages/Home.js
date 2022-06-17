@@ -1,7 +1,6 @@
 import React, {useEffect} from "react";
 import HomeContent from '../Components/HomeContent'
 import '../App.css'
-import bookCoverTemp from '../Assets/bookCover.png';
 
 
 export default function Home(){

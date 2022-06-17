@@ -28,9 +28,8 @@ function App() {
         
         </Routes>
         {/* Footer */}
-        <div className='buffer'></div>
-        <Footer />
     </div>
+        <Footer />
     </Router>
   );
 }

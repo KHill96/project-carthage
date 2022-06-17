@@ -1,11 +1,11 @@
 import React from "react";
-import { useParams } from "react-router";
+// import { useParams } from "react-router";
 import '../App.css'
 
 export default function Book(){
 
-    const params = useParams();
-    const bookInfo = [];
+    // const params = useParams();
+    // const bookInfo = [];
     
     // Get info & links r
 

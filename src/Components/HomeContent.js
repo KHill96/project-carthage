@@ -9,7 +9,7 @@ export default function HomeContent (props){
 
     // Generate listItems
     var idString = "";
-    for (let i = 0; i < 9; i++){
+    for (let i = 0; i < 8; i++){
         if (props.items==="books"){
             idString ='/books/' + i;
                 if (props.category==="recentlyAdded"){
