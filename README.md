@@ -1,70 +1,102 @@
-# Getting Started with Create React App
+<div align="center">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <h1>Public Repository</h1>
+  
+  <p>
+    Accessible Content in the Public Domain 
+  </p>
 
-## Available Scripts
 
-In the project directory, you can run:
+   
+<h4>
+   <a href="https://github.com/KHill96/public-repository/issues/">Report Bug</a>
+  <span> · </span>
+    <a href="https://github.com/KHill96/public-repository/issues/">Request Feature</a>
+  </h4>
+</div>
 
-### `npm start`
+<br />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<!-- Table of Contents -->
+# Table of Contents
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [About the Project](#about-the-project)
+  * [Tech Stack](#tech-stack)
+  * [Features](#features)
+- [Usage](#usage)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+  * [Code of Conduct](#code-of-conduct)
+- [License](#license)
+- [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
+  
 
-### `npm test`
+<!-- About the Project -->
+## About the Project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<!-- TechStack -->
+### Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://react-bootstrap.github.io/">React Bootstrap</a></li>
+  </ul>
+</details>
 
-### `npm run eject`
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="https://expressjs.com/">Express.js</a></li>
+  </ul>
+</details>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<details>
+<summary>Database</summary>
+  <ul>
+    <li>To Be Determined (Most Likely MySQL or MongoDB)</li>
+  </ul>
+</details>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<!-- Features -->
+### Features
 
-## Learn More
+- View content in browser/app
+- Download content in your desire format
+ 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<!-- Usage -->
+## Usage
+On the public repository, users can access content in the public domain. For ebooks, several versions are available from HTML to EPUB to PDf. Movies are also available for viewing directly on the site and are open to download in any given format (MP4, MKV, etc). 
 
-### Analyzing the Bundle Size
+<!-- Roadmap -->
+## Roadmap
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* [ ] Implement Content Pages and back end
+* [ ] Create "Bookshelves" and "Theaters"
+* [ ] Port to Mobile
 
-### Making a Progressive Web App
+<!-- Contributing -->
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<a href="https://github.com/KHill96/public-repository/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=KHill96/public-repository" />
+</a>
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Contributions are always welcome!
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+Project Link: [https://github.com/KHill96/public-repository](https://github.com/KHill96/public-repository)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
