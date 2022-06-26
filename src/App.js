@@ -12,23 +12,23 @@ import Book from './Pages/Book';
 function App() {
   return (
     <Router>
-    <div className='wrapper'>
-      <Header />
-      
-        <Routes>
-          {/* Home Route / Index Route */}
-          <Route path="/" exact element={<Home/>} />
-          {/* Book */}
-          <Route path="/books/:id" exact element={<Book/>}/>
-          {/* About */}
-          <Route path="/about" exact element={<About/>} />
-          {/* Privacy Policy */}
-          <Route path="/privacy" exact element={<Privacy/>} />
-
+      <div className='wrapper'>
+        <Header />
         
-        </Routes>
-        {/* Footer */}
-    </div>
+          <Routes>
+            {/* Home Route / Index Route */}
+            <Route path="/" exact element={<Home/>} />
+            {/* Book */}
+            <Route path="/books/:id" exact element={<Book/>}/>
+            {/* About */}
+            <Route path="/about" exact element={<About/>} />
+            {/* Privacy Policy */}
+            <Route path="/privacy" exact element={<Privacy/>} />
+
+          
+          </Routes>
+          {/* Footer */}
+      </div>
         <Footer />
     </Router>
   );
