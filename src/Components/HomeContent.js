@@ -1,15 +1,16 @@
 import React from "react";
-import bookCoverTemp from '../Assets/bookCover.png'
+// import bookCoverTemp from '../Assets/bookCover.png'
 import './HomeContent.css'
 
 export default function HomeContent (props){
 
     const listItemsRecentlyAdded = [];
     const listItemsMostPopular = [];
-
+    const bookCoverTemp = "https://images-na.ssl-images-amazon.com/images/I/81X-7ubCi2L.jpg"
     // Generate listItems
     var idString = "";
-    for (let i = 0; i < 8; i++){
+    var totalInList = 6;
+    for (let i = 0; i < totalInList; i++){
         if (props.items==="books"){
             idString ='/books/' + i;
                 if (props.category==="recentlyAdded"){
