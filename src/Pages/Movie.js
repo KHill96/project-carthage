@@ -26,13 +26,8 @@ const Movie = () => {
         <div className="container">
             <h1 className="movie-main-title">Night of the living Dead</h1>
             <div className="player-wrapper">
-                
-                {/* <video controls className="embed-responsive-item" >
-                    <source src={playerState.video.src}/>
-                    <track kind="subtitles" label="English" srcLang="en" src="../Assets/subs.vtt" default/>
-                </video> */}
-
                 <ReactPlayer 
+                    className="movie"
                     url={playerState.video.src}
                     // url="../Assets/NOTL.mp4"
                     controls={true}
@@ -51,8 +46,6 @@ const Movie = () => {
                     }}
                 
                 />
-
-
            
             </div>
             <div className="movie-description">
@@ -65,6 +58,8 @@ const Movie = () => {
             o find ways inside -- and one by one, the living humans become the prey of
              the deceased ones.
             </div>
+
+            <div className="buffer-2"></div>
             
 
         </div>
