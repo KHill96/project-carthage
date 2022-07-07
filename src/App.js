@@ -7,6 +7,8 @@ import Privacy from './Pages/Privacy';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Book from './Pages/Book';
+import Movie from './Pages/Movie'
+import Contact from './Pages/Contact';
 
 
 function App() {
@@ -20,15 +22,21 @@ function App() {
             <Route path="/" exact element={<Home/>} />
             {/* Book */}
             <Route path="/books/:id" exact element={<Book/>}/>
+            {/* Book */}
+            <Route path="/movies/:id" exact element={<Movie/>}/>
             {/* About */}
             <Route path="/about" exact element={<About/>} />
             {/* Privacy Policy */}
             <Route path="/privacy" exact element={<Privacy/>} />
+            {/* Contact */}
+            <Route path="/contact" exact element={<Contact/>} />
 
           
           </Routes>
           {/* Footer */}
       </div>
+      <div className="buffer"></div>
+
         <Footer />
     </Router>
   );
