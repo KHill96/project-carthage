@@ -22,7 +22,6 @@ export default function Book(){
                     <Image className="book-cover" rounded src="https://images-na.ssl-images-amazon.com/images/I/81X-7ubCi2L.jpg" alt="cover_image" />
                     <div className="book-info-text-description">
                     
-                        <div className="buffer"></div>
 
                         <span className="description-links">
                             BOok good lorem ipsum meme classic tale of alien invasion has to this day never been out of print. Like many works of the era, it was originally published as a serial—though the publisher, Pearson’s Magazine, demanded to know the ending before committing to publication.
