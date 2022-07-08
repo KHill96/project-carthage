@@ -1,0 +1,21 @@
+.footer{
+    text-align: center;
+    background-color: rgb(99,5,5);
+    color: white;
+    padding-top: 5px;
+    position:relative;
+    left: 0;
+    /* margin-top:40vh;     */
+    right: 0; 
+    bottom:0;
+}
+
+
+.left {
+    border-right: solid white 2px;
+    padding-right: 5px;
+}
+
+.right {
+    padding-left: 5px ;
+}
