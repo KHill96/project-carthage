@@ -1,7 +1,9 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/client/node_modules
+client/node_modules
+server/node_modules
+
 /.pnp
 .pnp.js
 
@@ -28,6 +30,8 @@ client/src/Assets
 
 client/package.json
 client/package-lock.json
+server/package.json
+server/package-lock.json
 
 /public/*.ico
 /public/robots.txt
