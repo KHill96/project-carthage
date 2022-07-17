@@ -22,7 +22,6 @@ export default async function handler(req,res) {
             try{
                 const updateDownloads = await Book.updateOne({id:bookID}, {$set : {total_downloads: 1}})
                 res.status(200).json({success:true},{updateDownloads})
-                console.log(updateDownloads)
             }
             catch(error){
                 res.status(400).json({success:false})
