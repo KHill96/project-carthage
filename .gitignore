@@ -30,3 +30,7 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# file assets
+public/books
+public/movies
