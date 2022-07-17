@@ -21,10 +21,6 @@ const bookSchema = mongoose.Schema({
         type: String,
         required: true
     },
-    total_downloads:{
-        type:Number,
-        required:true
-    },
     html_link:{
         type: String,
         required: true
@@ -44,6 +40,10 @@ const bookSchema = mongoose.Schema({
     tag_1:{
       type:String,
       required:true  
+    },
+    total_downloads:{
+        type:Number,
+        required:true
     },
     date:{
         type:Date,
