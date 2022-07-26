@@ -1,10 +1,7 @@
-
-
-
-
 export default function handler(req, res) {
-
-
-
-  res.status(200).json({ name: 'John Doe' })
+  try{
+    res.status(200).json({})
+  }catch(error){
+    res.status(400).json({success: false})
+  }
 }
