@@ -18,10 +18,7 @@ function Header() {
               <NavDropdown.Item href="/books/popular" className='sub-item'>Popular</NavDropdown.Item>
               <NavDropdown.Item href="/books/new" className='sub-item'>New</NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title="Movies" id="top-item">
-              <NavDropdown.Item href="#" className='sub-item'>Popular</NavDropdown.Item>
-              <NavDropdown.Item href="#" className='sub-item'>New</NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link href='/about' id='top-item'>About</Nav.Link>
           </Nav>
           <Form className="d-flex">
             <Form.Control
