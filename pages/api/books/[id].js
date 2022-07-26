@@ -1,4 +1,4 @@
-import dbConnect from "../../../lib/db"
+ import dbConnect from "../../../lib/db"
 import Book from "../../../models/book"
 
 
@@ -20,7 +20,7 @@ export default async function handler(req,res) {
         // Update book download total
         case 'PATCH':
             try{
-                const updateDownloads = await Book.updateOne({id:bookID}, {$set : {total_downloads: 1}})
+                const updateDownloads = await Book.updateOne({id:bookID}, {$inc : {total_downloads: 1}})
                 res.status(200).json({success:true},{updateDownloads})
             }
             catch(error){
