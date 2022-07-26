@@ -1,6 +1,6 @@
 <div align="center">
 
-  <h1>Public Repository</h1>
+  <h1>Project Carthage</h1>
   
   <p>
     Accessible Content in the Public Domain 
@@ -42,24 +42,17 @@
 ### Tech Stack
 
 <details>
-  <summary>Client</summary>
+  <summary>Framework</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-    <li><a href="https://react-bootstrap.github.io/">React Bootstrap</a></li>
+    <li><a href="https://nextjs.org/">NEXT.js</a></li>
   </ul>
 </details>
 
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
 
 <details>
 <summary>Database</summary>
   <ul>
-    <li>To Be Determined (Most Likely MySQL or MongoDB)</li>
+    <li>MongoDB</li>
   </ul>
 </details>
 
@@ -77,13 +70,9 @@
 
 <!-- Usage -->
 ## Usage
-On the public repository, users can access content in the public domain. For ebooks, several versions are available from HTML to EPUB to PDf. Movies are also available for viewing directly on the site and are open to download in any given format (MP4, MKV, etc). 
-
+With Project Carthage, users can access books in the public domain. Several versions are available from HTML to EPUB to PDF. 
 <!-- Roadmap -->
 ## Roadmap
-
-* [ ] Implement Content Pages and back end
-* [ ] Create "Bookshelves" and "Theaters"
 * [ ] Port to Mobile
 
 <!-- Contributing -->
