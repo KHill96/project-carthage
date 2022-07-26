@@ -50,18 +50,55 @@
 }
 
 
+/* Footer */
+.footer{
+  text-align: center;
+  background-color: rgb(99,5,5);
+  color: white;
+  padding-top: 5px;
+  left: 0;
+  right: 0; 
+  bottom:0;
+  position:fixed
+}
+
+.footer a:visited{
+  color:white
+}
+.footer a:active{
+  color:white
+}
+.footer a{
+  color:white
+}
+
+
+.left {
+  border-right: solid white 2px;
+  padding-right: 5px;
+}
+
+.right {
+  padding-left: 5px ;
+}
+
+
 
 /* Home Content */
 
 .horizontal{
   display: inline-block;
-  padding-right: 25px;
+  padding-right: 45px;
   text-align: center;
 }
   
 .horizontal img{
-  max-width: 180px !important;
   padding-bottom: 5px;   
+}
+
+.cover-image{
+  max-width: 180px !important;
+  min-width: 180px !important;
 }
 
 .display{
@@ -92,9 +129,35 @@
 }
 
 .title:hover{
-  color: black;
   text-decoration:underline;
 }
+
+.heading-link, .heading-link:active, .heading-link:visited{
+  font-size: 200%;
+  padding-top: 30px;
+  text-align: center;
+  color:black;
+  text-decoration: none;
+}
+
+.heading{
+  font-size: 200%;
+  padding-top: 30px;
+  text-align: center;
+  color:black;
+  text-decoration: none;
+}
+
+.heading:hover{
+  color:rgb(37, 37, 255);
+  background-color: transparent;
+}
+
+.sub-heading, .sub-heading:active, .sub-heading:visited{
+  color:black;
+  text-decoration: none;
+}
+
 
 
 
@@ -113,17 +176,9 @@
   padding-bottom: 3em;
 }
 
-.book-links{
-  color:black;
-  text-decoration: none;
-}
 
-.book-links:active{
-  color: black;
-}
-
-.book-links:visited{
-  color: black;
+.new-heading, .popular-heading {
+  text-align: center;
 }
 
 @media screen and (min-width: 1100px) {
@@ -131,6 +186,8 @@
   .book-info{
       font-size: large;
       display: flex;
+      padding-bottom: 50px;
+
   }
 
   .book-info img{
@@ -140,6 +197,8 @@
       min-height: 480px;
       float: left;
       padding-right: 5 em;
+            padding-bottom: 50px;
+
   }
 
   .book-info-text-description{
@@ -153,18 +212,8 @@
       /* padding-top: 5em; */
   }
 
-  .movie{
-      width:150px;
-      float:left;
-      padding-right: 100px;
-  }
 
-  .movie-description{
-      text-align: center;
-      /* float:right; */
-      /* padding-top: 150px; */
-      font-size: large;
-  }
+
 
 }
 
@@ -174,6 +223,7 @@
       padding-top: 25px;
       text-align: center;
       font-size: x-large;
+      padding-bottom: 50px;
   }
 
   .book-info-text-description{
@@ -195,24 +245,26 @@
       /* text-align: center; */
       
   }
-
   .player-wrapper{
-      display:flex;
-      justify-content: center;
-      align-items: center;
-  }
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
 
-  .movie{
-      width: 75%;
-      /* padding-left:100px */
-  }
+.movie{
+    width: 75%;
+    /* padding-left:100px */
+}
 
-  .movie-description{
-      text-align: center;
-      /* float:right; */
-      /* padding-top: 150px; */
-      font-size: x-large;
-  }
+.movie-description{
+    text-align: center;
+    /* float:right; */
+    /* padding-top: 150px; */
+    font-size: x-large;
+    padding-bottom: 75px;
+}
+
+
   
 }
 
