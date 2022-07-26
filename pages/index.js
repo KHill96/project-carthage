@@ -22,7 +22,7 @@ const Home = ({listRecentBooks, listPopularBooks}) => {
   return(
       <div>
         <Head><title>Project Carthage</title></Head>
-        <Link href="/books/"><a className='heading-link'><h1 className='heading'>Books</h1></a></Link>
+        {/* <Link href="/books/"><a className='heading-link'><h1 className='heading'>Books</h1></a></Link> */}
         <Link href="/books/new"><a className='sub-heading'><h2 >&emsp;&emsp;&emsp;Recently Added</h2></a></Link>
         <div className="body-content">
               <span className="content">
