@@ -16,8 +16,8 @@ const nextConfig = {
     }
     ,
     {
-      source:'/movies',
-      destination:'/movies/popular',
+      source:'/search/',
+      destination:'/search',
       permanent:true,
     }]
   }
