@@ -4,9 +4,12 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import {useRouter} from 'next/router'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Header() {
+  var input_value
+  const router = useRouter()
   return (
     <Navbar className="navbar" expand="lg" variant='dark' sticky='top'>
       <Container fluid>
@@ -26,9 +29,14 @@ function Header() {
               placeholder="Search"
               className="me-2"
               aria-label="Search"
+              onChange={e =>{
+                input_value = '/search/' + e.target.value
+              }}
             />
             {/* MUST DO */}
-            <Button className='search-button'>Search</Button>
+            <Button className='search-button' onClick={e => {
+              router.push(input_value)
+            }}>Search</Button>
           </Form>
         </Navbar.Collapse>
       </Container>
