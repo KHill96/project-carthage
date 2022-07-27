@@ -1,7 +1,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import Head from 'next/head'
+import styles from '../styles/Home.module.css'
 import axios from 'axios'
+
 
 
 export async function getServerSideProps(context){
@@ -23,18 +25,19 @@ const Home = ({listRecentBooks, listPopularBooks}) => {
       <div>
         <Head><title>Project Carthage</title></Head>
         {/* <Link href="/books/"><a className='heading-link'><h1 className='heading'>Books</h1></a></Link> */}
-        <Link href="/books/new"><a className='sub-heading'><h2 >&emsp;&emsp;&emsp;Recently Added</h2></a></Link>
-        <div className="body-content">
-              <span className="content">
-              <div className="recentlyAdded">
-                  <ul className="display">
+        <span>&emsp;&emsp;&emsp;</span>
+        <Link href="/books/new"><a className={styles.sub_heading}><h2 className={styles.underline}>Recently Added</h2></a></Link>
+        <div className={styles.body_content}>
+              <span className={styles.content}>
+              <div className={styles.recently_added}>
+                  <ul className={styles.display}>
                       {listRecentBooks &&
                         listRecentBooks.data.map((book, idx) =>{
                           return(
-                          <li className="horizontal" key={idx}>
-                            <a className="title" href={`/books/${book.id}`}>
+                          <li className={styles.horizontal} key={idx}>
+                            <a className={styles.title} href={`/books/${book.id}`}>
                               <Image 
-                                className='cover-image'
+                                className={styles.cover_image}
                                 src={book.cover_image_link}
                                 alt="cover"
                                 width="180px"
@@ -51,18 +54,18 @@ const Home = ({listRecentBooks, listPopularBooks}) => {
               </div>  
           </span>
         </div>
-        <Link href="/books/popular"><a className='sub-heading'><h2>&emsp;&emsp;&emsp;Popular</h2></a></Link>
+        <Link href="/books/popular"><a className={styles.sub_heading}><h2 className={styles.underline}>Popular</h2></a></Link>
         <div className="body-content">
-              <span className="content">
-              <div className="mostPopular">
-                  <ul className="display">
+              <span className={styles.content}>
+              <div className={styles.most_popular}>
+                  <ul className={styles.display}>
                       {listPopularBooks &&
                         listPopularBooks.data.map((book, idx) =>{
                           return(
-                          <li className="horizontal" key={idx}>
-                            <a className="title" href={`/books/${book.id}`}>
+                          <li className={styles.horizontal} key={idx}>
+                            <a className={styles.title} href={`/books/${book.id}`}>
                               <Image 
-                                className='cover-image'
+                                className={styles.cover_image}
                                 src={book.cover_image_link}
                                 alt="cover"
                                 width="180px"
