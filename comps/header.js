@@ -6,24 +6,29 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import {useRouter} from 'next/router'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import styles from '../styles/Header.module.css';
 
 function Header() {
   var input_value
   const router = useRouter()
+  
   return (
-    <Navbar className="navbar" expand="lg" variant='dark' sticky='top'>
+    <Navbar className={styles.navbar} expand="lg" variant='dark' sticky='top'>
       <Container fluid>
-        <Navbar.Brand className="brand" href="/">Project Carthage</Navbar.Brand>
+        <Navbar.Brand className='brand' href="/">Project Carthage</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" className='toggler'/>
         <Navbar.Collapse id="navbarScroll">
           <Nav className="me-auto my-2 my-lg-0">
-            <NavDropdown id="top-item" title="Books" >
-              <NavDropdown.Item href="/books/popular" className='sub-item'>Popular</NavDropdown.Item>
-              <NavDropdown.Item href="/books/new" className='sub-item'>New</NavDropdown.Item>
+            <NavDropdown id={styles.top_item} title="Books" >
+              <NavDropdown.Item href="/books/popular" className={styles.sub_item}>Popular</NavDropdown.Item>
+              <NavDropdown.Item href="/books/new" className={styles.sub_item}>New</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href='/about' id='top-item'>About</Nav.Link>
+            <Nav.Link href='/about' id={styles.top_item}>About</Nav.Link>
           </Nav>
-          <Form className="d-flex">
+          <Form className="d-flex" onSubmit={e => {
+            e.preventDefault()
+            router.push(input_value)
+          }}>
             <Form.Control
               type="search"
               placeholder="Search"
@@ -31,10 +36,10 @@ function Header() {
               aria-label="Search"
               onChange={e =>{
                 input_value = '/search/' + e.target.value
+                console.log(input_value)
               }}
             />
-            {/* MUST DO */}
-            <Button className='search-button' onClick={e => {
+            <Button className={styles.search_button} onClick={e => {
               router.push(input_value)
             }}>Search</Button>
           </Form>
