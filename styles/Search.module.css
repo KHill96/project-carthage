@@ -1,0 +1,51 @@
+/* Home Content */
+
+.body_content{
+    padding-top: 3rem;
+}
+
+.horizontal{
+    display: inline-block;
+    padding-right: 45px;
+    text-align: center;
+  }
+    
+  .horizontal img{
+    padding-bottom: 5px;   
+  }
+  
+  .cover-image{
+    max-width: 180px;
+    min-width: 180px;
+  }
+  
+  .display{
+    margin:0px;
+    text-align: center;
+    margin: auto;
+    padding-left: 10px;
+  /* justify-content: center; */
+  }
+  
+  
+  .info{
+    margin-left: 30%;
+    padding-top: 5%; 
+  }
+  
+  .title{
+    color:black;
+    text-decoration: none;
+  }
+  
+  .tilte:active{
+    color: black;
+  }
+  
+  .title:visited{
+    color: black;
+  }
+  
+  .title:hover{
+    text-decoration:underline;
+  }
