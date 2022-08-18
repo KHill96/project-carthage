@@ -8,11 +8,11 @@ import axios from 'axios'
 
 export async function getServerSideProps(context){
   // Get most recent books
-  let res = await axios.get(`${process.env.SERVER_API_ENDPOINT}/api/books/new/6`)
+  let res = await axios.get(`${process.env.SERVER_API_ENDPOINT}/api/books?sort=recent&limit=6`)
   // Set prop for recent books
   var listRecentBooks = await res.data
   // Get most popular books
-  res = await axios.get(`${process.env.SERVER_API_ENDPOINT}/api/books/popular/6`)
+  res = await axios.get(`${process.env.SERVER_API_ENDPOINT}/api/books?sort=popular&limit=6`)
   // Set prop for most popular books
   var listPopularBooks = await res.data
  
@@ -43,7 +43,7 @@ const Home = ({listRecentBooks, listPopularBooks}) => {
                                 width="180px"
                                 height="320px"
                               />
-                              <p>{book.title}</p>
+                              <p className='title'>{book.title}</p>
                             </a>
                           </li>
                         )})
@@ -71,7 +71,7 @@ const Home = ({listRecentBooks, listPopularBooks}) => {
                                 width="180px"
                                 height="320px"
                               />
-                              <p>{book.title}</p>
+                              <p className='title'>{book.title}</p>
                             </a>
                           </li>
                         )})
