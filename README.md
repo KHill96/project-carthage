@@ -61,11 +61,9 @@
 <!-- Features -->
 ### Features
 
-- View content in browser/app
+- Access a large library of books in the public domain
 - Download content in your desire format
  
-
-
 
 
 <!-- Usage -->
