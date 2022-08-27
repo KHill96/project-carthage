@@ -53,11 +53,6 @@
   padding-bottom: 1em;
 }
 
-
-.new-heading, .popular-heading {
-  text-align: center;
-}
-
 @media screen and (min-width: 1100px) {
 
   .book-info{
@@ -123,24 +118,6 @@
       /* text-align: center; */
       
   }
-  .player-wrapper{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.movie{
-    width: 75%;
-    /* padding-left:100px */
-}
-
-.movie-description{
-    text-align: center;
-    /* float:right; */
-    /* padding-top: 150px; */
-    font-size: x-large;
-    padding-bottom: 75px;
-}
 
 
   
