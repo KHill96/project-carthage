@@ -43,7 +43,7 @@ const Home = ({listRecentBooks, listPopularBooks}) => {
                                 width="180px"
                                 height="320px"
                               />
-                              <p className='title'>{book.title}</p>
+                              <span className='title'>{book.title}</span>
                             </a>
                           </li>
                         )})
@@ -71,7 +71,7 @@ const Home = ({listRecentBooks, listPopularBooks}) => {
                                 width="180px"
                                 height="320px"
                               />
-                              <p className='title'>{book.title}</p>
+                              <span className='title'>{book.title}</span>
                             </a>
                           </li>
                         )})
