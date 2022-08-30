@@ -19,10 +19,13 @@ function Header() {
         <Navbar.Toggle aria-controls="navbarScroll" className='toggler'/>
         <Navbar.Collapse id="navbarScroll">
           <Nav className="me-auto my-2 my-lg-0">
-            <NavDropdown id={styles.top_item} title="Books" >
-              <NavDropdown.Item href="/books?sort=popular" className={styles.sub_item}>Popular</NavDropdown.Item>
-              <NavDropdown.Item href="/books?sort=new" className={styles.sub_item}>New</NavDropdown.Item>
-            </NavDropdown>
+            {/* <NavDropdown id={styles.top_item} title="Books" >
+              <NavDropdown.Item href="/books/list?sort=popular" className={styles.sub_item}>Popular</NavDropdown.Item>
+              <NavDropdown.Item href="/books/list?sort=new" className={styles.sub_item}>New</NavDropdown.Item>
+            </NavDropdown> */}
+            <Nav.Link href='books?sort=popular' id={styles.top_item}>Popular</Nav.Link>
+            
+            <Nav.Link href='books?sort=new' id={styles.top_item}>Recently Added</Nav.Link>
             <Nav.Link href='/about' id={styles.top_item}>About</Nav.Link>
           </Nav>
           <Form className="d-flex" onSubmit={e => {
