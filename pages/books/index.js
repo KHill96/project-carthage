@@ -5,9 +5,11 @@ import styles from '../../styles/BooksList.module.css'
 
 
 export async function getServerSideProps(context){
-  console.log(context)
+  
   var sort = context.query.sort;
-  var booksList
+  var booksList;
+
+  
   if(context.query.sort === 'popular'){
     sort = context.query.sort;
     // Get most recent books
@@ -25,8 +27,8 @@ export async function getServerSideProps(context){
   // Return all of the props that were set
   return {props: {booksList, sort}}
 }
+
 const BookNew = ({booksList, sort}) => {
-  console.log(sort)
   return(
       <div>
           { sort === 'popular' && 
