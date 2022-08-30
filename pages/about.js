@@ -3,15 +3,14 @@ const About = () => {
         
         <div>
             <h3>About the Public Repository</h3> 
-            <p> &emsp; The Public Repository is a personal project that stores and provides access to work in the public domain. As of right now work is limited to movies, but more material will come over time.</p>
+            <p> &emsp; Project Carthage is a project that stores and provides access to work in the public domain.</p>
             <h3>Sources</h3> 
-            <p> &emsp; Books are gatherede from several different sources. PDF`&apos;` and some EPUB`&apos;`s are taken from Google, with some PDF`&apos;`s taken from other educational sites. 
-            Webpages are from the great people at <a href="www.gutenberg.org">Project Gutenberg</a>. EPUB and AZW3 formats are mainly taken from the minds behind <a>Standard Ebooks</a>. 
-            </p>
+            <p> &emsp; Books are gathered from several different sources. PDF`&apos;` and some EPUB`&apos;`s are taken from Google, with some PDF`&apos;`s taken from other educational sites. 
+            Webpages are from <a href="www.gutenberg.org">Project Gutenberg</a>. EPUB and AZW3 formats are mainly taken from <a>Standard Ebooks</a>. 
+            </p>            
             
-            
-            <h3> Read or Download</h3>
-            <p> &emsp; Read some of our books in your browser, or download them to have handy at any time.</p>
+            <h3> Read and Download</h3>
+            <p> &emsp; Read some of our books in your browser, or download them to have on hand at any time.</p>
             <p> &emsp; Work in the public domain should be easily accessible for all. Everyone should be encouraged to explore content in the public domain and to utilize the resources that make that content available. </p>
             <h3>Banned Books</h3>
             <p> &emsp; This site is based in an area where several books have not been banned. If you are located in an area where access to certain books has been blocked or revoked, you are encouraged to find those materials here. </p>
