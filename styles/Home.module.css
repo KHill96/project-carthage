@@ -1,10 +1,17 @@
 
 /* Home Content */
+.body_content{
+  align-items: center;
+  align-content: center;
+}
+
 
 .horizontal{
     display: inline-block;
     padding-right: 45px;
     text-align: center;
+    align-items: center
+    
   }
     
   .horizontal img{
@@ -33,9 +40,11 @@
   .title{
     color:black;
     text-decoration: none;
-    display:inline-block;
+    display:inline-table;
     width:180px;
     height:180px;
+    padding-bottom: 25px;    
+    padding-top: 25px;
   }
   
   .tilte:active{
@@ -64,6 +73,7 @@
     text-align: center;
     color:black;
     text-decoration: none;
+    padding-bottom: 100px;
   }
   
   .heading:hover{
@@ -79,5 +89,10 @@
   .sub_heading, .sub_heading:active, .sub_heading:visited{
     color:black;
     text-decoration: none;
+    padding-top: 100px;
+  }
+
+  .buffer{
+    padding-top: 20px;
   }
   
