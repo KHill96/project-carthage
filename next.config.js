@@ -11,7 +11,7 @@ const nextConfig = {
   async redirects(){
     return[{
       source: '/books',
-      destination:'/books/popular',
+      destination:'/books?sort=popular',
       permanent:true,
     }
     ,
