@@ -25,8 +25,8 @@ const Home = ({listRecentBooks, listPopularBooks}) => {
       <div>
         <Head><title>Project Carthage</title></Head>
         {/* <Link href="/books/"><a className='heading-link'><h1 className='heading'>Books</h1></a></Link> */}
-        <span>&emsp;&emsp;&emsp;</span>
-        <Link href="/books/new"><a className={styles.sub_heading}><h2 className={styles.underline}>Recently Added</h2></a></Link>
+        <div className={styles.buffer}></div>
+        <Link href="/books?sort=new"><a className={styles.sub_heading}><h2 className={styles.underline}>Recently Added</h2></a></Link>
         <div className={styles.body_content}>
               <span className={styles.content}>
               <div className={styles.recently_added}>
@@ -54,7 +54,7 @@ const Home = ({listRecentBooks, listPopularBooks}) => {
               </div>  
           </span>
         </div>
-        <Link href="/books/popular"><a className={styles.sub_heading}><h2 className={styles.underline}>Popular</h2></a></Link>
+        <Link href="/books?sort=popular"><a className={styles.sub_heading}><h2 className={styles.underline}>Popular</h2></a></Link>
         <div className="body-content">
               <span className={styles.content}>
               <div className={styles.most_popular}>
