@@ -51,10 +51,10 @@ const Book = ({bookInfo, apiPoint}) => {
                             <span className="links">
                                 <br></br>
                                 <br></br>
-                                <Link href={bookInfo.html_link}><a onClick={() => handleClickUpdateDownloads()}>Read Online 💾</a></Link><br></br>
+                                <Link href={bookInfo.html_link}><a onClick={() => handleClickUpdateDownloads()}>Read Online 🖥</a></Link><br></br>
                                 <Link href={bookInfo.pdf_link}><a  onClick={() => handleClickUpdateDownloads()}>Download PDF 📁</a></Link><br></br>
-                                <Link href={bookInfo.azw3_link}><a onClick={() => handleClickUpdateDownloads()}>Download for Kindle devices:AZW3 📁</a></Link><br></br>
-                                <Link href={bookInfo.epub_link}><a onClick={() => handleClickUpdateDownloads()}>Download for compatible readers: EPUB 📁</a></Link><br></br>
+                                <Link href={bookInfo.azw3_link}><a onClick={() => handleClickUpdateDownloads()}>Download for Kindle devices:AZW3 💽</a></Link><br></br>
+                                <Link href={bookInfo.epub_link}><a onClick={() => handleClickUpdateDownloads()}>Download for compatible readers: EPUB 📀</a></Link><br></br>
                             </span>
                         }
                     </div>
