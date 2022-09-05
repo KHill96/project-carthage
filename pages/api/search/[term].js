@@ -21,7 +21,10 @@ export default async function handler(req,res){
 
                     ]
                 })
-                res.status(200).json({data:returnedItems})
+                if (returnedItems.length !== 0)
+                    res.status(200).json({success:true, data:returnedItems})
+                else
+                    res.status(200).json({success:false})
             }catch(error){
                 res.status(400).json({success:false})
             }
