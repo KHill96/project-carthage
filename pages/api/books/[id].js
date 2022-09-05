@@ -11,7 +11,10 @@ export default async function handler(req,res) {
         case 'GET':
             try {
                 const books = await Book.find({id:bookID});
-                res.status(200).json ({data:books[0]})
+                if (books.length > 0)
+                    res.status(200).json ({success: true, data:books[0]})
+                else
+                    res.status(400).json({success: false})
             }catch(error){
                 res.status(400).json({success:false})
             }
