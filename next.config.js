@@ -8,15 +8,6 @@ const nextConfig = {
     formats: ['image/avif', 'image/webp'],
   },
 
-  async redirects(){
-    return[
-    
-    {
-      source:'/search/',
-      destination:'/search',
-      permanent:true,
-    }]
-  }
 }
 
 module.exports = nextConfig;
