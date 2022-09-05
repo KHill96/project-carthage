@@ -9,12 +9,8 @@ const nextConfig = {
   },
 
   async redirects(){
-    return[{
-      source: '/books',
-      destination:'/books?sort=popular',
-      permanent:true,
-    }
-    ,
+    return[
+    
     {
       source:'/search/',
       destination:'/search',
