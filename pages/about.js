@@ -2,7 +2,7 @@ const About = () => {
     return(
         
         <div>
-            <h3>About the Public Repository</h3> 
+            <h3>About the Project Carthage</h3> 
             <p> &emsp; Project Carthage is a project that stores and provides access to work in the public domain.</p>
             <h3>Sources</h3> 
             <p> &emsp; Books are gathered from several different sources. PDF`&apos;` and some EPUB`&apos;`s are taken from Google, with some PDF`&apos;`s taken from other educational sites. 
