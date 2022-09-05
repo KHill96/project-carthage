@@ -34,7 +34,7 @@ const BookNew = ({booksList, sort}) => {
           { sort === 'popular' && 
             <h1 className={styles.popular_heading}>Most Popular Books</h1>}
 
-          { sort === 'recent' && 
+          { sort === 'new' && 
             <h1 className={styles.popular_heading}>Most Recent Books</h1>}
 
           <div>
