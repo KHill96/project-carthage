@@ -49,3 +49,7 @@
   .title:hover{
     text-decoration:underline;
   }
+
+  .no_results{
+    text-align: center;
+  }

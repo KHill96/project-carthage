@@ -2,6 +2,8 @@
 /* Home Content */
 
 .popular_heading, .new_heading{
+  padding-top: 1em;
+  padding-bottom: 1em;
     text-align: center;
 }
 
