@@ -1,5 +1,6 @@
 import Header from '../comps/header'
-import Footer from './footer';
+import Head from 'next/head'
+import carthage from '../public/favicon.ico'
 
 const Layout = ({children}) => {
     return ( 
