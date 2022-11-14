@@ -29,7 +29,9 @@
 <!-- About the Project -->
 ## About the Project
 
-
+<p>
+  Project Carthage is a site that hosts content in the public domain to allow it to be more widley accessible. 
+</p>
 
 
 <!-- TechStack -->
