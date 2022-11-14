@@ -24,12 +24,6 @@
   * [Tech Stack](#tech-stack)
   * [Features](#features)
 - [Usage](#usage)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-  * [Code of Conduct](#code-of-conduct)
-- [License](#license)
-- [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
   
 
 <!-- About the Project -->
@@ -52,7 +46,7 @@
 <details>
 <summary>Database</summary>
   <ul>
-    <li>MongoDB</li>
+    <li><a href="https://mongodb.com">MongoDB</a></li>
   </ul>
 </details>
 
@@ -70,8 +64,7 @@
 ## Usage
 With Project Carthage, users can access books in the public domain. Several versions are available from HTML to EPUB to PDF. 
 <!-- Roadmap -->
-## Roadmap
-* [ ] Port to Mobile
+
 
 <!-- Contributing -->
 ## Contributing
