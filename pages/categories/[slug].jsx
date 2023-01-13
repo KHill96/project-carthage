@@ -68,17 +68,10 @@ const CategoriesSlug = ({books, category}) =>{
       )
 }
 
-export async function getStaticProps({params}){
+export async function getServerSideProps({params}){
     const details = await getCategoryBooks(params.slug)    
     return {props:{books: details.node.books, category: details.node.category}}
 }
 
-export async function getStaticPaths(){
-    const details = await getCategoriesAll()
-    return {
-        paths: details.map(( {slug}) => ({params:{ slug }})),
-        fallback: true
-    }
-}
 
 export default CategoriesSlug

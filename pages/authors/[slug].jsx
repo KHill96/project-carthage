@@ -67,17 +67,11 @@ const AuthorsSlug = ({books, author}) =>{
       )
 }
 
-export async function getStaticProps({params}){
+export async function getServerSideProps({params}){
     const details = await getAuthorBooks(params.slug)    
     return {props:{books: details.node.books, author: details.node.name}}
 }
 
-export async function getStaticPaths(){
-    const details = await getAuthors()
-    return {
-        paths: details.map(( {slug}) => ({params:{ slug }})),
-        fallback: true
-    }
-}
+
 
 export default AuthorsSlug

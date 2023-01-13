@@ -27,7 +27,7 @@ const Categories = ({categories}) => {
     )
   }
   
-export async function getStaticProps() {
+export async function getServerSideProps() {
     const categories = (await getCategoriesAll()) || []
     console.log(categories)
     return {props:{categories}}

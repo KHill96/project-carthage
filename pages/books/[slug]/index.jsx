@@ -10,11 +10,6 @@ import {getBook, getBooks} from '../../../services'
 
 const Book = ({book}) => {
     const parse = require('html-react-parser');
-    const router = useRouter()
-    if(router.isFallback){
-        return <LoaderComp />
-    }
-    
     return(
         <div>
         {book && 
@@ -59,17 +54,11 @@ const Book = ({book}) => {
     )
 }
 
-export async function getStaticProps({params}){
+export async function getServerSideProps({params}){
     const details = await getBook(params.slug)
     return {props:{book:details.books[0]}}
 }
 
-export async function getStaticPaths(){
-    const details = await getBooks()
-        return {
-        paths: details.map(({node : {slug}}) => ({params:{ slug }})),
-        fallback: true
-    }
-}
+
 
 export default Book

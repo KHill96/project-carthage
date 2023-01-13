@@ -30,7 +30,7 @@ const Authors = ({authors}) => {
     )
   }
   
-export async function getStaticProps() {
+export async function getServerSideProps() {
     const authors = (await getAuthors()) || []
     console.log(authors)
     return {props:{authors}}
