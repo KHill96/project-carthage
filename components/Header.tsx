@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import {useRouter} from 'next/router'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import styles from '../styles/Component.module.css';
+import styles from '../styles/Component.module.css'
 import { UrlObject } from 'url';
 import Image from 'next/image';
 
@@ -18,7 +18,7 @@ function Header() {
       <Container fluid>
           <a href='/' className='px-3'>
             <Image 
-              src='/../public/carthage.png'
+              src='../public/carthage.png'
               width={40}
               height={40}
               alt="logo"
