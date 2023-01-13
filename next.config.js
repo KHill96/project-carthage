@@ -1,13 +1,19 @@
 /** @type {import('next').NextConfig} */
-
-const nextConfig = {
+module.exports = {
   reactStrictMode: true,
-  swcMinify: true,
   images:{
-    domains:['images-na.ssl-images-amazon.com', 'localhost'],
-    formats: ['image/avif', 'image/webp'],
+    domains:[
+      'media.graphassets.com'
+    ]
   },
+  async redirects() {
+    return [{
+      source:'/books',
+      destination: '/',
+      permanent: true
+    }
+    ]
+  }
+
 
 }
-
-module.exports = nextConfig;

@@ -1,15 +1,13 @@
-import '../styles/globals.css'
-import Layout from '../comps/layout'
-import { SSRProvider } from 'react-bootstrap'
+import '../styles/globals.scss'
+import { Layout } from '../components'
+import NextNProgress from 'nextjs-progressbar'
 
 function MyApp({ Component, pageProps }) {
-
   return (
-    <SSRProvider>
     <Layout>
+      <NextNProgress />
       <Component {...pageProps} />
     </Layout>
-    </SSRProvider>
   )
 }
 

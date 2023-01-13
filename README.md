@@ -3,7 +3,7 @@
   <h1>Project Carthage</h1>
   
   <p>
-    Accessible Content in the Public Domain 
+    Accessible Books in the Public Domain 
   </p>
 
 
@@ -41,32 +41,25 @@
   <summary>Framework</summary>
   <ul>
     <li><a href="https://nextjs.org/">NEXT.js</a></li>
+    <li><a href="https://www.typescriptlang.org/">Typescript</a></li>
+    <li><a href="https://tailwindcss.com/">Tailwind CSS</a></li>
+    <li><a href="https://react-bootstrap.github.io/">React Bootstrap</a></li>
+    <li><a href="https://hygraph.com/">Hygraph</a></li>
   </ul>
 </details>
-
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://mongodb.com">MongoDB</a></li>
-  </ul>
-</details>
-
-
 
 <!-- Features -->
 ### Features
 
-- Access a large library of books in the public domain
+- Access a library of books in the public domain
+- Read books right in your browser
 - Download content in your desire format
  
 
 
 <!-- Usage -->
 ## Usage
-With Project Carthage, users can access books in the public domain. Several versions are available from HTML to EPUB to PDF. 
-<!-- Roadmap -->
-
+With Project Carthage, you can access books in the public domain, reading them in the browser or download them in a PDF, EPUB, or AZW3 format. 
 
 <!-- Contributing -->
 ## Contributing

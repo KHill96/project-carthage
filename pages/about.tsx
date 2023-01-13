@@ -1,7 +1,12 @@
+import Head from "next/head";
+console.log('test')
 const About = () => {
     return(
-        
-        <div className="about">
+        <div className=" text-center text-xl">
+            <div className='pt-10'></div>
+            <Head>
+                <title>About Project Carthage</title>
+            </Head>
             <h3>About the Project Carthage</h3> 
             <p> &emsp; Project Carthage is a project that stores and provides access to work in the public domain.</p>
             <h3>Sources</h3> 
@@ -14,10 +19,10 @@ const About = () => {
             <p> &emsp; Work in the public domain should be easily accessible for all. Everyone should be encouraged to explore content in the public domain and to utilize the resources that make that content available. </p>
             <h3>Banned Books</h3>
             <p> &emsp; This site is based in an area where several books have not been banned, contrary to other states&apos; policies. If you are located in an area where access to certain books has been blocked or revoked, you are encouraged to find those materials here. </p>
-            <p className="disclaimer">
+            <p className="font-bold text-center">
             <b>The site follows US Copyright Law and it&apos;s definition of work public domain.</b></p>
         </div>
-    );
+    )
 }
 
 export default About;

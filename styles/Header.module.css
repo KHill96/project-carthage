@@ -1,32 +1,7 @@
 /*  Header */
-.navbar{
-    background-color: rgb(95, 5, 5);
-  }
+
   
-  .navbar_brand{
-    color:white;
-  }
-  
-  .sub_item{
-    background-color: rgb(99, 5, 5);
-    color:white;
-  }
-  
-  .sub_item:hover{
-    background-color: black; 
-    color:white;
-  
-  }
-  
-  #top_item{
-    color: white;
-    /* padding-left: 2px; */
-    font-size: larger;
-    /* padding-bottom: 2px; */
-    /* justify-content: center; */
-    word-spacing: -5px;
-    text-decoration: underline;
-  }
+
   
   
   .search_button{
