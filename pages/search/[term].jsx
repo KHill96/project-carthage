@@ -71,7 +71,6 @@ const SearchTerm = ({results, term}) =>{
 
 export async function getServerSideProps({params}){
     const details = await searchTerm(params.term)
-    console.log(details)
     return {props:{results: details.books, term: params.term}}
 }
 
