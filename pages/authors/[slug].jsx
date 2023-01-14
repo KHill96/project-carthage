@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import { getAuthors, getAuthorBooks } from "../../services";
+import { getAuthorBooks } from "../../services";
 
 const AuthorsSlug = ({books, author}) =>{
     return (

@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import { getCategoriesAll, getCategoryBooks } from "../../services";
+import { getCategoryBooks } from "../../services";
 
 const CategoriesSlug = ({books, category}) =>{
     return (
