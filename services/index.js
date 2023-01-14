@@ -6,7 +6,7 @@ const graphqlEndpoint = process.env.READ_ONLY_GRAPHQL_ENDPOINT;
 export const getNewDisplay = async () => {
     const query = gql`
     query GetDisplay{
-      books{
+      books(orderBy: publishedAt_DESC){
           title,
           authors{
             name,
@@ -145,7 +145,7 @@ export const getCategoryBooks = async (slug) =>{
 export const getAuthors= async() =>{
   const query = gql`
   query GetAuthors {
-    authors {
+    authors(orderBy: name_ASC) {
       name
       slug
     }
