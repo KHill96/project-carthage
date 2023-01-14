@@ -18,7 +18,7 @@ function Header() {
       <Container fluid>
           <a href='/' className='px-3'>
             <Image 
-              src='carthage.png'
+              src='/carthage.png'
               width={40}
               height={40}
               alt="logo"
