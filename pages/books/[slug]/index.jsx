@@ -1,10 +1,8 @@
-import { useRouter } from "next/router";
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import {LoaderComp} from '../../../components'
-import {getBook, getBooks} from '../../../services'
+import {getBook} from '../../../services'
 
 
 
