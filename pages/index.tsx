@@ -66,7 +66,7 @@ const Home = (props:{books: any}) => {
   )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const books = await getNewDisplay()
   return {props:{books}}
 }
